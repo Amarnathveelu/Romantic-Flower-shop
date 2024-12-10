@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../img/Favicon.png">
+    <title>Romantic Flower Shop</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"  rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" ><img src="../img/RFS_Logo.png" alt="Logo" class="logo"></a>
+        <input type="checkbox"  id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop By Collections</a>
+                    <ul>
+                        <li><a href="#">New Collection</a></li>
+                        <li><a href="#">Flowers in a Box</a></li>
+                        <li><a href="#">Luxury</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop By Occasions</a>
+                    <ul>
+                        <li><a href="#">Diwali Collection</a></li>
+                        <li><a href="#">Birthday Gifts</a></li>
+                        <li><a href="#">Valentines Day Bokeh</a></li>
+                        <li><a href="#">Love Roses Collection</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Choose Your Place</a>
+                    <ul>
+                        <li><a href="#">Chennai</a></li>
+                        <li><a href="#">Coimbatore</a></li>
+                        <li><a href="#">Madurai</a></li>
+                        <li><a href="#">Theni</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav> 
+
+        <div class="img-container">
+            <div class="img-icon-cont"><a href="http://127.0.0.1:5500/login.html"><img src="../img/Profile_icon_img.png" alt="Profile Icon" class="icon"></a></div>
+            <div class="img-icon-cont"><a href="#"><img src="../img/search_icon_img.png" alt="Search Icon" class="icon"></a></div>
+            <div class="img-icon-cont"><a href="#"><img src="../img/Cart_icon.png" alt="Cart Icon" class="icon"></a></div>
+        </div>
+    </header>
+
+  <!-- Image Slider -->
+  <div class="slider-container">
+    <div class="slider">
+      <img src="../img/pexels-antonmislawsky-226145.jpg" alt="Image 1">
+      <img src="../img/pexels-jmark-250716.jpg" alt="Image 2">
+      <img src="../img/pexels-pixabay-267360.jpg" alt="Image 3">
+      <img src="../img/pexels-valeriya-1484657.jpg" alt="Image 4">
+    </div>
+
+    <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="next" onclick="moveSlide(1)">&#10095;</button>
+  </div>
+<section>
+  <div class="scrolling-container">
+    <marquee behavior="scroll-img" width="100%" direction="left">
+    <div class="scrolling-images">
+      <a href="#"><img src="../img/scrolling imgs/fautsn-category.webp" class="scroll-img" alt="Image 1"></a>
+      <a href="#"><img src="../img/scrolling imgs/fmauvm-category.webp" alt="Image 2"></a>
+      <a href="#"><img src="../img/scrolling imgs/xcw24-category.webp" alt="Image 3"></a>
+      <a href="#"><img src="../img/scrolling imgs/lbmulfly-category (1).webp" alt="Image 4"></a>
+      <a href="#"><img src="../img/scrolling imgs/lbtku-category.webp" alt="Image 5"></a>
+      <a href="#"><img src="../img/scrolling imgs/lbxcnd24-category.webp" alt="Image 6"></a>
+      <a href="#"><img src="../img/scrolling imgs/xsnow24-category.jpg" alt="Image 7"></a>
+      <a href="#"><img src="../img/scrolling imgs/fmauvm-category.webp" alt="Image 8"></a>
+      <a href="#"><img src="../img/scrolling imgs/lbmulfly-category (1).webp" alt="Image 9"></a>
+    </div>
+  </marquee>
+  </div>
+</section>
+<div class="row">
+  <h1 style="margin-left:10px ;">BEST COLLECTIONS</h1><hr style="width: 320px; font-weight: bold;margin-left: 10px;"><br>
+<div style=" display: flex;flex-direction: row; flex-wrap: wrap; justify-content: space-around;">
+  <div class="col-3 col-sm-6" style="border: 1px solid; height: 200px;width: 200px; text-align: center; color:#333;cursor: pointer;" onclick="">
+  <img src="../img/Best_sells/Blush_inavase_400x.webp" alt="Wild-Mix" style="height:80%;width: 100%;">
+  <p style="letter-spacing: 1px;font-size: 10px;">BLUSH( IN A VASE )</p>
+  <p style="color: #585858e1;font-size: 10px;">RS.250</p>
+  </div>
+  <div class="col-3 col-sm-6" style="height: 200px;width: 200px; text-align: center; color:#333;cursor: pointer;" onclick="">
+    <img src="../img/Best_sells/Wild-Mix_400x.webp" alt="Wild-Mix" style="height:80%;width: 100%;">
+    <p style="letter-spacing: 1px;font-size: 10px;">WILD MIX - CLASSIC CUBO </p>
+    <p style="color: #585858e1;font-size: 10px;">FROM RS.300</p>
+    </div>
+    <div class="col-3 col-sm-6" style="height: 200px;width: 200px; text-align: center; color:#333;cursor: pointer;" onclick="">
+      <img src="../img/Best_sells/IMG_0313-01-800x800_400x.jpg" alt="Wild-Mix" style="height:80%;width: 100%;">
+      <p style="letter-spacing: 1px;font-size: 10px;">WILD MIX N CAKE-CASSIC GRANDE </p>
+      <p style="color: #585858e1;font-size: 10px;">FROM RS.350</p>
+      </div>
+      <div class="col-3 col-sm-6" style="height: 200px;width: 200px; text-align: center; color:#333;cursor: pointer;" onclick="">
+        <img src="../img/Best_sells/Valentino-Bunch_400x.webp" alt="Wild-Mix" style="height:80%;width: 100%;">
+        <p style="letter-spacing: 1px;font-size: 10px;">VALENTINO - BUNCH</p>
+        <p style="color: #585858e1;font-size: 10px;">RS.350</p>
+        </div>
+      </div>      
+ 
+
+  </div><br><br>
+<div class="row   christmas-card ">
+<div class="col-7" style=" border:none;display: grid;place-content: center; text-align: center;">
+  <h1 style="font-family: 'Dancing Script', cursive ;font-size: 40px;">A merry, beautiful christmas</h1><br>
+  <p>Give the gift of Christmas flowers this season.</p><br>
+  <button style="height: 50px; width: 120px; border-radius: 20px; color: white; background-color: #333; margin-left: 100px;">christmas</button>
+</div>
+<div class="col-3" style=" border:none; width:700px;padding: 0%;">
+  <img src="../img/card_imgs/Merry_Christmas.png" alt="" srcset="" style="height:100%; width:100%;">
+</div>
+
+</div><br><br>
+
+ <div class="row" style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+       <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px;text-align: center; cursor: pointer;">
+        <img src="../img/Flowers_imgs/poppy flower-amico.png"  style="width: 100%; height: 90%;" alt="">
+        <p>RS.299.90</p>
+      </div>
+      <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px; text-align: center; cursor: pointer;" >
+        <img src="../img/Flowers_imgs/poppy flower-bro.png"  style="width: 100%; height: 90%;" alt="">
+        <p>RS.499.0</p>
+      </div>
+      <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px; text-align: center; cursor: pointer;">
+        <img src="../img/Flowers_imgs/poppy flower-cuate.png" style="width: 100%; height: 90%;" alt="">
+        <p>RS.450.0</p>
+      </div>
+      <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px; text-align: center; cursor: pointer;">
+        <img src="../img/Flowers_imgs/poppy flower-pana.png"  style="width: 100%; height: 90%;" alt="">
+        <p>RS.390.99</p>
+      </div>
+      <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px; text-align: center; cursor: pointer; ">
+        <img src="../img/Flowers_imgs/poppy flower-rafiki.png"  style="width: 100%; height: 90%;" alt="">
+        <p>RS.420.99</p>
+      </div>
+      <div class="col-2 col-sm-6" style="width: 150px; height: 150px;margin: 15px; text-align: center; cursor: pointer;">
+        <img src="../img/Flowers_imgs/rose flower-pana.png"  style="width: 100%; height: 90%;" alt="">
+        <p>RS.350.0</p>
+      </div>
+ </div><br><br>
+
+<div class="row   white-rose-card">
+  <div class="col-3" style=" border:none; width:700px;padding: 0%;">
+    <img src="../img/card_imgs/White_rose.jpg" alt="" srcset="" style="height:100%; width:100%;">
+  </div>
+  <div class="col-7" style=" border:none;display: grid;place-content: center; text-align: center;">
+  <h1 style="font-family: 'Dancing Script', cursive ;font-size: 40px;">shop local this holiday season</h1><br>
+  <p>Let us send flowers from your local florist today.</p><br>
+  <button style="height: 50px; width: 120px; border-radius: 20px;
+   color: white; background-color: #333; margin-left: 100px;">Shop Local</button>
+</div>
+</div><br><br>
+
+
+<div class="row   pink-rose-card">
+ 
+  <div class="col-7" style=" border:none;display: grid;place-content: center; text-align: center;">
+    <h1 style="font-family: 'Dancing Script', cursive ;font-size: 40px;">birthday flowers</h1><br>
+    <p>Deliver happiness with a bouquet of their favorite blooms.</p><br>
+    <button style="height: 50px; width: 120px; border-radius: 20px;
+     color: white; background-color: #333; margin-left: 100px;">Shop Birthday</button>
+  </div>
+  <div class="col-3" style=" border:none; width:700px;padding: 0%;">
+    <img src="../img/card_imgs/pinck_rose.jpg" alt="" srcset="" style="height:100%; width:100%;">
+  </div>
+  
+  </div><br><br>
+
+
+<footer>
+  <div class="col-12"><h1 class="bt-title"><span style="color: lightgray;">Romantic Flower shop</span> </h1></div><hr><br><br>
+  <div class="row">
+ <div class=" col-6  col-sm-12 bt-card">
+  <input type="email" name="" id="email"><label for="email" class="btn-go">Go</label>
+ </div>
+ <div class="col-6 col-sm-12" style="text-align: center; color: white;">
+  <h4 style="font-size: 20px;">Romantic Flower Shop</h4>
+  <p style="font-size: 15px;">165 Bangalamedu.</p>
+  <p style="font-size: 15px;">Theni-625531</p>
+ </div>
+</div><hr><br><br>
+<div class="row" style="display: flex; flex-direction: row;height: 300px; justify-content: space-around;flex-wrap: wrap; text-align: center;">
+  <div class="col-3 col-sm-12" style="text-decoration: none;color: white;text-align: start;">
+    <h3 style="color: white;margin: 8px;">Learn More About</h3>
+    <p><a href="#" style="color: white;margin: 5px;">About Us</a></p>
+    <p><a href="#" style="color: white;margin: 5px;">safe Shoping</a></p>
+    <p><a href="#" style="color: white;margin: 5px;">Privacy</a></p>
+    <p><a href="#" style="color: white;margin: 5px;">Delivary</a></p>
+    
+  </div>
+  <div class="col-3 col-sm-12" style="text-decoration: none;color: white;text-align: start;">
+    <h3 style="color: white;margin: 8px;">Shop</h3>
+    <p><a href="#" style="color: white;margin: 10px;">Anniversary</a></p>
+    <p><a href="#" style="color: white;margin: 10px;">Brithday</a></p>
+    <p><a href="#" style="color: white;margin: 10px;">Love & Romance</a></p>
+    <p><a href="#" style="color: white;margin: 10px;">Others</a></p>
+    
+  </div>
+  <div class="col-3 col-sm-12" style="text-decoration: none;color: white;text-align: start;">
+    <h2 style="color: white;margin: 8px;">Customer Service</h2>
+    <p><a href="#" style="color: white;margin:10px;">Help/FAQS</a></p>
+  </div>
+</div><br><br>
+
+<div class="row" style="margin-top: 40px;">
+  <hr><br><h1  style="color: white; font-size: 20px;">Contact Us</h1><br><br>
+  <div class="col-6">
+    <div style="display: flex;flex-direction: row;">
+      <img src="../img/whatsapp-icons.png" alt="whatsapp Icon" style="height:30px;width: 30px;">
+    <p style="color: white; font-size: 15px;margin-top: 10px;"><sup>+</sup>91____________</p>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div style="display: flex;flex-direction: row;">
+      <img src="../img/instagram_icon.png" alt="whatsapp Icon" style="height:30px;width: 30px;">
+    <p style="color: white; font-size: 15px;margin-top: 10px;">@Romantic_Flower_Shop</p>
+    </div>
+  </div>
+</div>
+</footer>
+  <script>
+
+    let currentIndex = 0; 
+    const slides = document.querySelectorAll('.slider img');
+
+    function moveSlide(step) {
+      currentIndex += step;
+
+      if (currentIndex >= slides.length) {
+        currentIndex = 0;
+      }
+      if (currentIndex < 0) {
+        currentIndex = slides.length -1
+      }
+
+      document.querySelector('.slider').style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    let slideInterval = setInterval(() => {
+      moveSlide(1); 
+    }, 3000); 
+
+        document.querySelector('.prev').addEventListener('click', () => {
+      clearInterval(slideInterval); 
+      moveSlide(-1); 
+    });
+
+    document.querySelector('.next').addEventListener('click', () => {
+      clearInterval(slideInterval); 
+      moveSlide(1); 
+    });
+
+
+  </script>
+
+</body>
+</html>
+

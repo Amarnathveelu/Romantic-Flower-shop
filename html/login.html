@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+<div class="container">
+ <div class="row">
+  <div class="col-6">
+ <div class="fcard-cont">
+     <div class="card">
+    <div style="color: white;margin-top: 10px;">
+      <h3>We are</h3><hr style="width:60px;"><br>
+      <h2>Invite only right now.</h2><br>
+      <p>10 Million<sup>+</sup> people have joined our network.</p>
+      <p>We Invite you to join the tribe.</p>
+      <p>Our site have sells as gift and bukeys.</p>
+    </div>
+      <div style="margin-top:100px;">
+      <p style="color: white; font-size:15px;">Already have an account..?</p>
+      <a href="http://127.0.0.1:5500/signin.html" 
+      style="color: white; font-size:20px; text-decoration: none;letter-spacing:1px;">SignIn</a>
+    </div>
+     </div>
+  
+
+ </div>
+</div>
+
+ 
+  <div class="col-6">
+    <div class="card-cont">
+        <div class="form-cont">
+          <h1>Login</h1><br><br>
+      <form name="myform" onsubmit="return validateForm()" method="post">
+        <label>Fullname :</label>
+        <input type="text" id="text" name="fulname" placeholder="Enter ..."><br><br>
+        <label>Password :</label>
+        <input type="password" id="pass" placeholder="Enter your password..."><br><br>     
+
+          <label>OTP:</label>
+          <input type="text" id="otp" placeholder="Enter OTP" disabled><br><br>
+          <button type="button" onclick="generateOTP()">Generate OTP</button>
+       
+      </form><br><br>
+    </div>
+      <div>
+        <button type="button" onclick="openFoodApp()" class="btn">Next</button>
+      </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<script>
+    let generatedOTP;
+
+    function generateOTP() {
+      generatedOTP = Math.floor(100000 + Math.random() * 900000);
+      document.getElementById("otp").value = generatedOTP;
+      document.getElementById("otp").disabled = false;
+      alert("Your OTP is: " + generatedOTP);
+    }
+
+    function validateForm() {
+      let name = document.forms["myform"]["fulname"].value;
+      let enteredOTP = document.getElementById("otp").value;
+
+      if (name === "") {
+        alert("Name must be filled out");
+        return false;
+      }
+
+      if (enteredOTP != generatedOTP || !enteredOTP) {
+        alert("Invalid OTP. Please enter the correct OTP.");
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+      return true;
+    }
+
+    function openFoodApp() {
+      if (validateForm()) {
+        window.location.href = 'http://127.0.0.1:5500/index.html';
+      }
+    }
+  </script>
+</body>
+</html>
